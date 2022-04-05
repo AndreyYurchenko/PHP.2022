@@ -1,0 +1,31 @@
+version: "2"
+
+services:
+  hw5:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - C:\\docker\HW5\\:/var/www/html
+    networks:
+    - abc
+
+  db:
+    image: mysql:5.7.28
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+    volumes:
+      - volume2:/var/lib/mysql
+    networks:
+      - abc
+volumes:
+  volume1:
+  volume2:
+
+networks:
+  abc:
+    driver: bridge
+
