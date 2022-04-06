@@ -86,33 +86,11 @@ $color2 = new RGBColor(100,100,100);
 $mixedColor = $color1->mix($color2);
 $c1 = RGBColor::random();
 $c2 = RGBColor::random();
-var_dump($c1);
-var_dump($c2);
+//var_dump($c1);
+//var_dump($c2);
 $c = $c1->mix($c2);
 var_dump($c);
-echo $this->red;
-//var_dump($mixedColor);
-//echo "<br/>";
-//var_dump($color1->equal($color2));
-?><!doctype html>
-<html lang="en">
-<head>
-    <style>
-        div {
-            background-color: rgb(0, 191, 255);
-            color: rgb(255, 255, 255);
-            padding: 20px;
-        }
-    </style>
-<body>
-
-<div>
-
-    <h1>London is the capital city of England.</h1>
-    <p>It is the most populous city in the United Kingdom,
-        with a metropolitan area of over 13 million inhabitants.</p>
-
-</div>
-</body>
-</html>
-
+$vars = get_object_vars ( $c );
+echo "<br>";
+$arr = (array)$c;
+?>
