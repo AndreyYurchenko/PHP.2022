@@ -89,8 +89,30 @@ $c2 = RGBColor::random();
 //var_dump($c1);
 //var_dump($c2);
 $c = $c1->mix($c2);
-var_dump($c);
+//var_dump($c);
 $vars = get_object_vars ( $c );
 echo "<br>";
 $arr = (array)$c;
-?>
+?><!doctype html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            background-color: rgb(
+            <?php foreach ($arr as $elem): ?>
+            <?= $elem ?>","
+            <?php endforeach ?>);
+            color: rgb(211, 217, 129);
+            padding: 20px;
+        }
+    </style>
+<body>
+
+<div>
+
+    <h1>Разнообразие цветов)</h1>
+    <p>Чего тут только не прям все цвета радуги.</p>
+
+</div>
+</body>
+</html>
