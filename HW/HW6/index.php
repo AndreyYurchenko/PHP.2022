@@ -1,6 +1,5 @@
 <?php
 
-namespace HW6;
 class Autoloader
 {
     protected $prefixes = [];
@@ -40,6 +39,6 @@ class Autoloader
 
 $autoloader = new Autoloader();
 $autoloader->addNamespace('hw', 'src');
-$c = new \HW6\src\User();
+$c = new \hw\User();
 
 

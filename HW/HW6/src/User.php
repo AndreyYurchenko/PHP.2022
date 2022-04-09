@@ -1,6 +1,6 @@
 <?php
 
-namespace HW6\src;
+namespace hw;
 
 class User
 {
