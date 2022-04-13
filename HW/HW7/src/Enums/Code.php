@@ -2,7 +2,9 @@
 
 namespace HW7\Enums;
 
-class Code
+Enum Code
 {
-
+    case USD;
+    case EUR;
+    case UAH;
 }
