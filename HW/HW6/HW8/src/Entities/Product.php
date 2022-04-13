@@ -5,6 +5,7 @@ namespace Hillel\Entities;
 use Hillel\Casts\ArrayCast;
 use Hillel\Casts\MoneyCast;
 use Hillel\Casts\DateTimeCast;
+use PHPUnit\Util\Exception;
 
 class Product
 {
@@ -31,6 +32,8 @@ class Product
     {
         if (isset($this->casts[$variable])) {
             $this->$variable = $this->casts[$variable]::set($value);
+        } else {
+            throw  new Exception('Incorrect set');
         }
     }
 
@@ -38,6 +41,8 @@ class Product
     {
         if (isset($this->casts[$variable])) {
             return $this->casts[$variable]::get($this->$variable);
+        } else {
+            throw  new Exception('Incorrect get');
         }
     }
 

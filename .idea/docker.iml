@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/HW/HW6/src" isTestSource="false" packagePrefix="hw" />
+      <sourceFolder url="file://$MODULE_DIR$/HW/HW7/src" isTestSource="false" packagePrefix="HW7" />
       <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
     </content>
     <orderEntry type="inheritedJdk" />
