@@ -6,7 +6,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - C:\\docker\HW6\\:/var/www/html
+      - C:\\docker\HW\HW8\\:/var/www/html
     networks:
     - abc
 
